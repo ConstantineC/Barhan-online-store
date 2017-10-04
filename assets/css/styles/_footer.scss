@@ -1,0 +1,71 @@
+@import "./_variables.scss";
+
+.wrapper-footer {
+  background-color: $back-footer;
+}
+footer {
+  height: 215px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  .header {
+    font-family: 'FiraSans-Bold', 'sans-serif';
+    font-size: 18px;
+    color: $h;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .number {
+    font-family: 'FiraSans-ExtraBoldItalic', 'sans-serif';
+    color: $darkGrey;
+    font-size: 16px;
+    list-style-type: none;
+  }
+  li {
+    font-family: 'FiraSans-Regular', 'sans-serif';
+    font-size: 16px;
+    color: $darkGrey;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: $darkGrey;
+  }
+  a:hover {
+    color: $accentFire;
+  }
+  .footer-subscribe {
+    flex-direction: column;
+  }
+  p {
+    margin: 0;
+    font-family: 'FiraSans-Regular', 'sans-serif';
+    font-size: 16px;
+    color: $darkGrey;
+    padding-bottom: 15px;
+  }
+  input[type="email"] {
+    padding: 10px;
+    color: $darkGrey;
+    font-family: 'FiraSans-Regular', 'sans-serif';
+    font-size: 14px;
+    width: 400px;
+  }
+  input[type="submit"] {
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 12px 40px;
+    border: none;
+    margin-bottom: 21px;
+    background-color: $accentFire;
+    font-family: 'FiraSans-SemiBold', 'sans-serif';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $accentCloud;
+  }
+}

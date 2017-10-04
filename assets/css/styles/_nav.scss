@@ -1,0 +1,31 @@
+@import "./_variables.scss";
+
+.wrapper-nav {
+  background-color: $back-nav;
+}
+nav {
+  min-height: 50px;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  ul {
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding: 0px;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    font-family: 'FiraSans-Regular', 'sans-serif';
+    font-size: 20px;
+    color: $accentCloud;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  a:hover {
+    color: $accentFire;
+  }
+  
+}

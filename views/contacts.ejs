@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barhan restaurant</title>
+  <link rel="stylesheet" href="../assets/libs/FontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/css_contacts/style.css">
+  <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/nav.ejs %>
+  <article class="flex">
+    <img src="../assets/img/Wide_slash.png" alt="">
+    <div class="article-content flex">
+      <img src="../assets/img/contacts.jpg" class="image" alt="Контакты">
+      <div class="content flex">
+        <h2>Связаться с нами</h2>
+        <p>Хотите задать вопрос, нужна дополнительная информация, или у Вас есть предложение? Отправьте нам сообщение с помощью специальной формы, расположенной ниже. Мы обязательно Вам ответим!</p>
+        <form action="/contact" method="POST" class="flex">
+          <div class="inputs"></div>
+          <input type="text" class="input" name="name" placeholder="Имя">
+          <input type="text" class="input" name="webPage" placeholder="Сайт">
+          <input type="email" name="email" class="input" placeholder="Email">
+          <input type="tel" class="input" name="telephone" placeholder="Телефон">
+          <textarea name="message" id="" placeholder="Сообщение"></textarea>
+          <div class="submit flex"><input type="submit"></div>
+        </form>
+      </div>
+    </div>
+    <img src="../assets/img/Wide_slash.png" alt="">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1030.8105275823953!2d60.61051081115121!3d56.8080053090213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1495756794728" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <img src="../assets/img/Wide_slash.png" alt="">
+  </article>
+  <% include partials/footer.ejs %>
+  <% include partials/year.ejs %>
+</body>

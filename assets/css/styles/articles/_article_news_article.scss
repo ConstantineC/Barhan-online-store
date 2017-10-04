@@ -1,0 +1,43 @@
+@import "../_variables.scss";
+article{
+ background-color: #fff;
+ height: 820px;
+ max-width: 1200px;
+ margin: 0px auto;
+ flex-direction: column;
+ align-items: center;
+ img {
+   margin: 50px 0px;
+ }
+ .article-content {
+   flex-basis: 100%;
+   height: 530px;
+   justify-content: space-around;
+ }
+ .article-image {
+   margin: 0 40px 0 0;
+   height: 100%;
+ }
+ .article-new {
+   flex-basis: 60%;
+   flex-direction: column;
+ }
+ h2 {
+   color: $accentFire;
+   font-family: 'tangak', 'sans-serif';
+   font-size: 30px;
+   margin: 0px;
+ }
+ .article-data {
+   font-family: 'FiraSans-Regular', 'sans-serif';
+   font-size: 14px;
+   color: $lightGrey;
+ }
+ .article-text {
+   margin: 0;
+   font-family: 'FiraSans-Regular', 'sans-serif';
+   font-size: 14px;
+   color: $darkGrey;
+ }
+
+}

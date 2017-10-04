@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barhan restaurant</title>
+  <link rel="stylesheet" href="../assets/libs/FontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/css_menu/style.css">
+  <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/nav.ejs %>
+  <article>
+    <div class="article-thing">
+      <img src="../assets/img/Slash.png" alt="">
+    </div>
+    <div class="article-hits">Меню</div>
+    <ul class="flex">
+      <li class="flex">
+        <a href="/menu/soups"><img src="../assets/img/Menu/Soup/Borch.jpg" alt="" class="block-image"></a>
+        <div class="article-name flex">
+          <a href="/menu/soups">Супы</a>
+        </div>
+      </li>
+      <li class="flex">
+        <a href="/menu/salads"><img src="../assets/img/Menu/Salads/Salad-Olivue.jpg" alt="" class="block-image"></a>
+        <div class="article-name flex">
+          <a href="/menu/salads">Салаты</a>
+        </div>
+      </li>
+      <li class="flex">
+        <a href="/menu/hot"><img src="../assets/img/Menu/Hot/Shashlik-svin.jpg" alt="" class="block-image"></a>
+        <div class="article-name flex">
+          <a href="/menu/hot">Горячее</a> 
+        </div>
+      </li>
+      <li class="flex">
+        <a href="/menu/garnish"><img src="../assets/img/Menu/Garnish/Pure.jpg" alt="" class="block-image"></a>
+        <div class="article-name flex">
+          <a href="/menu/garnish">Гарниры</a>
+        </div>
+      </li>
+      <li class="flex">
+        <a href="/menu/bakery"><img src="../assets/img/Menu/Bakery/Samsa-s-govyadinoi.jpg" alt="" class="block-image"></a>
+        <div class="article-name flex">
+          <a href="/menu/bakery">Выпечка</a>
+        </div>
+      </li>
+      <li class="flex">
+        <a href="/menu/drinks"><img src="../assets/img/Menu/Drinks/Cola.png" alt="" class="block-image"></a>
+        <div class="article-name flex">
+          <a href="/menu/drinks">Напитки</a>
+        </div>
+      </li>
+    </ul>
+  </article>
+  <% include partials/footer.ejs %>
+  <% include partials/year.ejs %>
+</body>

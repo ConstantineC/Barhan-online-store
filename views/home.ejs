@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barhan restaurant</title>
+  <link rel="stylesheet" href="../assets/libs/FontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/css_home/style.css">
+  <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/nav.ejs %>
+  <article>
+    <div class="article-thing">
+      <img src="../assets/img/Slash.png" alt="">
+    </div>
+    <div class="article-hits">Хиты</div>
+    <ul class="flex">
+      <li class="flex">
+        <a href="/hot/3"><img src="../assets/img/Menu/Hot/Shashlik-svin.jpg" alt="" class="block-image"></a>
+        <div class="article-price flex price-1">
+          <div class="attributes flex">
+            <div class="name">ШАШЛЫК СВИНОЙ</div>
+            <div class="gramm">60 ГР</div>
+          </div>
+          <div class="price">145 <i class="fa fa-rub" aria-hidden="true"></i> </div>
+        </div>
+        <button class="article-to-basket flex visib basket-1" data-name='Шашлык свиной' data-price="145" data-category="Горячее" data-image="../assets/img/Menu/Hot/Шашлык свиной.jpg"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Добавить в корзину</button>
+      </li>
+      <li class="flex">
+        <a href="/hot/4"><img src="../assets/img/Menu/Hot/Plov.jpg" alt="" class="block-image"></a>
+        <div class="article-price flex price-2">
+          <div class="attributes flex">
+            <div class="name">ПЛОВ С ГОВЯДИНОЙ</div>
+            <div class="gramm">250 ГР</div>
+          </div>
+          <div class="price">120 <i class="fa fa-rub" aria-hidden="true"></i> </div>
+        </div>
+        <button class="article-to-basket flex visib basket-2" data-name='Плов с говядиной' data-price="120" data-category="Горячее" data-image="../assets/img/Menu/Hot/Плов с говядиной.jpg"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Добавить в корзину</button>
+      </li>
+      <li class="flex">
+        <a href="/drinks/4"><img src="../assets/img/Menu/Drinks/Cola.png" alt="" class="block-image"></a>
+        <div class="article-price flex price-3">
+          <div class="attributes flex">
+            <div class="name">COCA-COLA</div>
+            <div class="gramm">500 МЛ</div>
+          </div>
+          <div class="price">50 <i class="fa fa-rub" aria-hidden="true"></i> </div>
+        </div>
+        <button class="article-to-basket flex visib basket-3" data-name='COCA-COLA' data-price="50" data-category="Напитки" data-image="../assets/img/Menu/Drinks/Кола.png"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Добавить в корзину</button>
+      </li>
+      <li class="flex">
+        <a href="/soups/2"><img src="../assets/img/Menu/Soup/Charcho.jpg" alt="" class="block-image"></a>
+        <div class="article-price flex price-4">
+          <div class="attributes flex">
+            <div class="name">Харчо</div>
+            <div class="gramm">250 гр</div>
+          </div>
+          <div class="price">60 <i class="fa fa-rub" aria-hidden="true"></i> </div>
+        </div>
+        <button class="article-to-basket flex visib basket-4" data-name='Харчо' data-price="60" data-category="Супы" data-image="../assets/img/Menu/Soup/Харчо.jpg"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Добавить в корзину</button>
+      </li>
+      <li class="flex">
+        <a href="/salads/3"><img src="../assets/img/Menu/Salads/Salad-Zdorov.jpg" alt="" class="block-image"></a>
+        <div class="article-price flex price-5">
+          <div class="attributes flex">
+            <div class="name">Салат "Здоровье"</div>
+            <div class="gramm">100 гр</div>
+          </div>
+          <div class="price">45 <i class="fa fa-rub" aria-hidden="true"></i> </div>
+        </div>
+        <button class="article-to-basket flex visib basket-5" data-name='Салат "Здоровье"' data-price="45" data-category="Салаты" data-image="../assets/img/Menu/Salads/Салат Здоровье.jpg"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Добавить в корзину</button>
+      </li>
+      <li class="flex">
+        <a href="/garnish/0"><img src="../assets/img/Menu/Garnish/Kartofel.jpg" alt="" class="block-image"></a>
+        <div class="article-price flex price-6">
+          <div class="attributes flex">
+            <div class="name">Картофель ароматный</div>
+            <div class="gramm">100 гр</div>
+          </div>
+          <div class="price">65 <i class="fa fa-rub" aria-hidden="true"></i> </div>
+        </div>
+        <button class="article-to-basket flex visib basket-6" data-name='Картофель ароматный' data-price="65" data-category="Гарниры" data-image="../assets/img/Menu/Garnish/Картофель ароматный.jpg"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Добавить в корзину</button>
+      </li>
+    </ul>
+    <a href="/menu" class="article-to-menu flex">Перейти в меню</a>
+  </article>
+  <% include partials/footer.ejs %>
+  <% include partials/year.ejs %> 
+  <script src="../../assets/libs/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="../../assets/controller/basket-object.js"></script>
+  <script src="../assets/controller/basket-home.js"></script>
+</body>

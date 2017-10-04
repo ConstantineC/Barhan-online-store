@@ -1,0 +1,10 @@
+@import "./_variables.scss";
+.year {
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  background-color: $back-year;
+  font-size: 14px;
+  font-family: 'FiraSans-SemiBold', 'sans-serif';
+  color: $accentCloud;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barhan restaurant</title>
+  <link rel="stylesheet" href="../assets/libs/FontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/css_item/style.css">
+  <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/nav.ejs %>
+  <article class="flex">
+    <img src="../assets/img/Wide_slash.png" alt="">
+    <div class="article-content flex">
+      <img src="<%= food[number].image %>" alt="" class="image">
+      <div class="description flex">
+        <div class="first">
+          <h2><%= food[number].title %></h2>
+          <div class="content flex">
+            <div class="consist">
+              <%= food[number].composition %>
+            </div>
+            <div class="calories">
+              На 100гр.: <br>
+              Белки: <%= food[number].proteins %> <br>
+              Жиры: <%= food[number].fats %> <br>
+              Углеводы: <%= food[number].сarbohydrates %> <br>
+              Калорийность: <%= food[number].calories %>
+            </div>
+          </div>
+          <div class="gramm"><%= food[number].weight %></div>
+        </div>
+        <div class="article-end flex">
+          <div class="price"><%= food[number].price %> Р</div>
+          <button class="article-to-basket" data-name='<%= food[number].title %>' data-price="<%= food[number].price %>" data-category="<%= food[number].category %>" data-image="<%= food[number].image %>">В корзину</button>
+        </div>
+      </div>
+    </div>
+    <img src="../assets/img/Wide_slash.png" alt="">
+  </article>
+  
+  <% include partials/footer.ejs %>
+  <% include partials/year.ejs %>
+  <script src="../assets/libs/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="../assets/controller/basket-object.js"></script>
+</body>

@@ -1,0 +1,39 @@
+@import "../_variables.scss";
+article {
+ background-color: $back-article;
+ height: 839px;
+ max-width: 1200px;
+ margin: 0px auto;
+ flex-direction: column;
+ align-items: center;
+ img {
+   margin: 50px 0px;
+ }
+ .article-content {
+   height: 560px;
+   justify-content: space-around;
+ }
+ .image {
+   background-color: #d7d7d7;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+ .content {
+   flex-basis: 50%;
+   flex-direction: column;
+   align-items: center;
+   h2 {
+    font-size: 36px;
+    font-family: 'tangak', 'sans-serif';
+    width: 50%;
+    text-align: center;
+    font-weight: normal;
+    margin: 0px;
+   }
+   p{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'FiraSans-Regular', 'sans-serif';
+   }
+ }
+}

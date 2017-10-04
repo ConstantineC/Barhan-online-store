@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barhan restaurant</title>
+  <link rel="stylesheet" href="../assets/libs/FontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/css_basket/style.css">
+  <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/nav.ejs %>
+  <article class="flex">
+    <img src="../assets/img/Wide_slash.png" alt="">
+    <div class="article-list flex">
+      <ul class="flex">
+        <li class="article-image up"></li>
+        <li class="article-title up"></li>
+        <li class="article-category up">Категория</li>
+        <li class="article-price up">Цена</li>
+        <li class="article-number up">Кол-во</li>
+        <li class="article-sum up">Сумма</li>
+        <li class="article-reset up"></li>
+      </ul>
+    </div>
+    <div class="article-other flex">
+      <div class="other-left flex">
+        <a href="/menu">Вернуться в меню</a>
+        <button class="article-clean"><i class="fa fa-times" aria-hidden="true"></i> Очистить корзину</button>
+      </div>
+      <div class="other-right flex">
+        <div class="article-total">Итог</div>
+        <div class="article-total-price">Р</div>
+      </div>
+    </div>
+    <form action="/product-send" method="POST">
+      <h2>Оформление заказа</h2>
+      <fieldset class="form-personal">
+        <legend>Введите свои персональные данные</legend>
+        <input type="text" placeholder="Имя" name="name" required>
+        <input type="email" placeholder="E-mail" name="email" required><br>
+        <input type="tel" placeholder="+7 (___) ___-__-__" name="telephone" required>
+      </fieldset>
+      <div class="form-forms flex">
+        <fieldset class="form-time">
+          <legend>Время доставки</legend>
+          <input type="date" placeholder="Dата" name="dataNumber" required>
+          <input type="time" placeholder="Время" name="timeNumber" required>
+          <input type="text" placeholder="Кол-во персон" name="number">
+        </fieldset>
+        <fieldset class="form-pay">
+          <legend>Способ расчёта</legend>
+          <input type="radio" name="money" value="Наличный расчет" required>
+          <p>Наличный расчёт</p><br>
+          <input type="radio" name="money" value="Пластиковая карта" required>
+          <p>Пластиковая карта</p>
+        </fieldset>
+        <div class="product-input">
+        </div>
+      </div>
+      <fieldset class="form-comment">
+        <legend>Комментарий к заказу</legend>
+        <div class="form-comment-flex flex">
+          <textarea name="comments" placeholder="Имя"></textarea>
+          <input type="submit" value="Оформить заказ">
+        </div>
+      </fieldset>
+    </form>
+    <img src="../assets/img/Wide_slash.png" alt="">
+  </article>
+  <% include partials/footer.ejs %>
+  <% include partials/year.ejs %>
+  <script src="../assets/libs/jQuery/jquery-3.2.1.min.js"></script>
+  <script src="../assets/controller/basket-object.js"></script>
+</body>
