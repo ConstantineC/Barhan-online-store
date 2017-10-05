@@ -8,4 +8,4 @@ To use project you need:
 1. Command "npm install"
 2. Run MongoDB
 3. Run command "node index"
-4. The server will be listening on port 3000
+The server will be listening on port 3000
